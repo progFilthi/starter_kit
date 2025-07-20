@@ -8,14 +8,14 @@ interface ChildrenProps {
 
 export default function Container({ children }: ChildrenProps) {
   return (
-    <div className="flex items-center justify-between min-h-screen  text-white flex-col max-w-5xl border-r-4 border-l-4 border-blue-500 mx-auto">
-      <header className="bg-green-500 w-full">
+    <div className="flex items-center justify-between min-h-screen flex-col max-w-5xl border-r border-l mx-auto">
+      <header className="w-full border-b">
         <Navbar />
       </header>
-      <main className="flex-1 bg-red-500 w-full flex items-center justify-center">
+      <main className="flex-1 w-full flex items-center justify-center">
         {children}
       </main>
-      <footer className="bg-yellow-500 w-full">
+      <footer className="w-full border-t">
         <Footer />
       </footer>
     </div>
